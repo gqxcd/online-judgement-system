@@ -1,0 +1,24 @@
+.label {
+    color: white;
+    font: bold;
+    min-width: 62px;
+    margin-right: 10px;
+}
+
+
+.diff-easy {
+    background-color: #5CB85C;
+}
+
+.diff-hard{
+    background-color: #D9534F;
+
+}
+
+.diff-medium{
+    background-color: #F0AD4E;
+}
+
+.diff-super{
+    background-color: #990055;
+}
