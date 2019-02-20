@@ -1,0 +1,26 @@
+<div class="container">
+  <form novalidate #form="ngForm">
+    <div class="form-group">
+      <label for="name">Difficulty:</label>
+      <select class="custom-select" name="difficulty" [(ngModel)]="newProblem.difficulty">
+        <option value="easy"> Easy </option>
+        <option value="medium"> Medium </option>
+        <option value="hard"> Hard </option>
+        <option value="super"> Super </option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" class="form-control" id="name" name="name"placeholder="Enter name here"
+            [(ngModel)]="newProblem.name">
+    </div>
+    <div class="form-group">
+      <label for="desc">Description:</label>
+      <textarea row="3" class="form-control" id="desc" name="desc" placeholder="Enter description here"
+                [(ngModel)]="newProblem.desc"></textarea>
+    </div>
+    <button class="btn btn-primary" (click)="addProblem()" >Submit</button>
+    <br>
+    <br>
+  </form>
+</div>
